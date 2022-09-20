@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="plugin.video.motogprewind" name="[COLORlime]MotoGP Rewind[/COLOR]" version="0.1" provider-name="MotoGPRewind">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.requests" />
+            <import addon="script.module.routing"/>
+            <import addon="script.module.unidecode" />
+            <import addon="script.module.inputstreamhelper" />
+            <import addon="script.module.resolveurl"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">Support me https://ko-fi.com/gprewind | Dukung di https://saweria.co/gprewind</summary>
+            <platform>all</platform>
+            <language>en</language>
+            <license>GPL-2.0-or-later</license>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+        </assets>
+        </extension>
+    </addon>
+
+    <addon id="repository.MotoGPRewind" name="MotoGPRewind Wizard Repository" version="0.0.1" provider-name="MotoGPRewind">
+        <extension point="xbmc.addon.repository" name="MotoGPRewind Wizard Repository">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/gprewind/repository.gprewindwizard/main/_repo/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/gprewind/repository.gprewindwizard/main/_repo/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/gprewind/repository.gprewindwizard/main/_repo/</datadir>
+            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Install all the latest Builds</summary>
+            <description>Welcome to the MotoGP Rewind Wizard.</description>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+</addons>
